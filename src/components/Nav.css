@@ -1,0 +1,152 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 400;
+    padding-top: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    background-color: black;
+}
+.leftheader {
+
+    display : flex;
+    align-items: center;
+}   
+.hamberger{
+    width: 20px;
+}
+.nav__logo {
+    left: 40px;
+    width: 80px;
+    object-fit: contain;
+}
+.middleheader{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.nav__input{
+    left: 50%;
+    background-color: rgba(76, 75, 75, 0.582);
+    border-radius: 20px;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+    
+
+
+.sbutton,
+.voicebtn 
+{   display : flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow :none;
+}
+.sbutton   {
+ width: 30px;
+ height: 25px;
+ background-color: rgb(63, 62, 62);
+ border : none;
+ position: absolute;
+ border-radius: 20px;
+ transform: translateX(146px);
+}
+.voicebtn{
+    width: 30px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: rgb(46, 45, 45);
+    border : none;
+
+
+}   
+
+.stooltip, 
+.vtooltip
+{  position : absolute;
+    white-space: nowrap;
+    color :white;
+    bottom : -20px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    background-color: gray;
+    font-size: 12px;
+}
+
+.sbutton:hover .stooltip,  
+.voicebtn:hover .vtooltip {
+    opacity: 1;
+}
+
+.rightheader{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+.uploadimg {
+    height : 25px;
+}
+.menu {
+    height : 25px;
+}
+.notification{
+    height: 25px;
+}
+.notificationcontainer{
+    position :relative;
+
+}
+.notificationalarm{
+    position : absolute;
+    top : 0;
+    right : 2px;
+    font-size: 10px;
+    background-color: red;
+    width: 9px;
+    height : 10px;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+.avatar {
+    height : 25px;
+    border-radius: 50%;
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: black;
+    width: 55px;
+    z-index: 200;
+    padding-top: 5px;
+}
+
+.sidebarlink {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.sidebarlink:hover{
+    background-color: gray;
+}
+.sidebarlink img {
+    height: 15px;
+    margin-bottom: 4px;
+}
+.sidebarlink div{
+    font-size: 10px;
+    color: white;
+}
